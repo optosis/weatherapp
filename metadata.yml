@@ -1,0 +1,18 @@
+---
+:id: 219124783
+:submitters:
+- :name: Casey Puentes
+  :email: cpuentes@umd.edu
+- :name: Nabeel Elberry
+  :email: nelberry@umd.edu
+- :name: Alexander Wang
+  :email: aw01867@terpmail.umd.edu
+- :name: Ari Kaplan
+  :email: akapla11@terpmail.umd.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2023-12-10 10:13:14.935545000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2023-12-10 02:13:14.935545000 Z
+:status: processed
+:score: 98.0

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20sp"
+        android:text="Weather History"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Select a Date to View"
+        android:layout_below="@+id/textView2"
+        android:id = "@+id/dateSelect"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateSelect"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataGroup"
+        android:layout_below="@+id/calendarView"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/highestTemp"
+            android:layout_width="151dp"
+            android:layout_height="43dp"
+
+            android:text="Loading..."
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/lowestTemp"
+            android:layout_width="151dp"
+            android:layout_height="43dp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Loading..."
+            android:layout_toRightOf="@id/highestTemp"
+
+            />
+
+        <TextView
+            android:id="@+id/averageTemp"
+            android:layout_width="151dp"
+            android:layout_height="43dp"
+
+            android:text="Loading..."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_below="@id/highestTemp"
+            />
+        <TextView
+            android:id="@+id/totalPrecipitation"
+            android:layout_width="151dp"
+            android:layout_height="43dp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Loading..."
+            android:layout_alignBottom="@id/averageTemp"
+            android:layout_toRightOf="@id/averageTemp"
+            />
+        <TextView
+            android:id="@+id/windSpeedHigh"
+            android:layout_width="151dp"
+            android:layout_height="43dp"
+
+            android:text="Loading..."
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_below="@id/averageTemp"
+            />
+        <TextView
+            android:id="@+id/windDirection"
+            android:layout_width="151dp"
+            android:layout_height="43dp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Loading..."
+            android:layout_alignBottom="@id/windSpeedHigh"
+            android:layout_toRightOf="@id/windSpeedHigh"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBack"
+        android:text="Go Back"
+        android:layout_below="@id/dataGroup"
+        android:layout_marginTop="45sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:background="#FDDD"
+        android:orientation="horizontal"
+        android:layout_below="@id/goBack"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</RelativeLayout>
